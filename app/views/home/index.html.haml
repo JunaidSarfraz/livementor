@@ -1,2 +1,734 @@
-%h2
-	It is the index page of live mentor replica site
+.newhead
+  .user-nav
+    %a{:href => "/"}
+      .logo
+    %ul.newhead-links.pull-left
+      %li
+        %a.head-link.active{:href => "/"}
+          %font
+            %font Private tuition
+      %li
+        %a.head-link{"data-target" => "#written_disclaimer", "data-toggle" => "modal"}
+          %font
+            %font written aids
+      %li
+        %a.head-link{:href => ""}
+          %font
+            %font MasterClass
+          %span.newhead-link-new
+            %font
+              %font NEW
+    / Connect + Devenir Mentor/ Dropdown + Devenir Mentor / Nouvelle annonce
+    / Déconnecté => Connect
+    %ul.pull-right
+      %li
+        %a{"data-toggle" => "modal", :href => "#login-box-modal"}
+          %font
+            %font Log in
+      %li
+        %a.no_pad{"data-toggle" => "modal", :href => "#sign_up_modal"}
+          %font
+            %font Registration
+    .mobile-menu-toggle.needclick{"data-toggle" => "mobile-menu"}
+      %span.mobile-menu-toggle-text
+        %font
+          %font Menu
+      .mobile-menu-toggle-hamburger
+        %div
+        %div
+        %div
+.hide.newhead-search-bar
+  %div{:style => "margin: auto;  width: 35%"}
+    %input.header-search-bar.js-autosuggest-categories.pull-left{:autocomplete => "off", :placeholder => "Rechercher", :type => "search", :value => ""}
+/ Top block
+.home-block-top
+  .home-topmodule-ctn.container.fluid
+    .home-topmodule-ctn-wrap
+      .home-topmodule-ctn-titles
+        %h1.home-topmodule--title
+          %font
+            %font Better than a teacher, a mentor
+        %h2.home-topmodule--subtitle
+          %font
+            %font All levels, all subjects and always available
+      .home-searchmodule
+        .search-bar-large
+          %input.js-autosuggest-categories{:autocomplete => "off", "data-selector" => ".home-searchmodule", :placeholder => "Dans quoi avez-vous besoin d'aide ? Essayez 'mathématiques'", :type => "text"}
+            %a.search-bar-large-button{:href => "#"}
+              %img{:alt => "Search-icon", :src => "//dozhvly6e8gax.cloudfront.net/assets/home/search-icon-a2f9bdcd099ada71c0777adcd9750b91.png"}
+        %ul.typeahead.dropdown-menu
+  .home-video-ctn
+    %video{:autoplay => "", :loop => "true", :name => "main_video", :poster => "//dozhvly6e8gax.cloudfront.net/assets/home/video-screen-4cca5e8813ac18557a242f53f77ab200.jpg", :src => "https://d2zhr8bqx7k6su.cloudfront.net/videos/home_video-a293aa9cfdf3c1e56a09e11ae29eab51.mp4"}
+    .home-video-mask
+/ Why to use block
+.home-block-whytouse.home-block-ui.home-block-ui-duo
+  .container.fluid
+    .home-block-main-title-ctn
+      %h3.home-block-main-title
+        %font
+          %font Why thousands of students chose LiveMentor?
+      .home-block-main-title--pattern
+        %span
+        %span
+        %span
+    .block-txt.block-left
+      %h4.home-block-main-subtitle
+        %font
+          %font Help immediately
+      .home-block-main-txt
+        %p
+          %font
+            %font Private lessons by videoconference allow you to benefit from the support of a high level of mentor and perfectly suited to your needs, whatever your schedule or your city.
+        %p
+          %font
+            %font More time lost in transportation: our mentors are available and responsive to accompany you in the long run and help you out at the last minute.
+      %a.mentor-btn{:onclick => ""}
+        %font
+          %font Find a mentor
+    .block-illu.block-right
+      %img{:alt => "", :src => "//dozhvly6e8gax.cloudfront.net/assets/home/illustration-carte-26e024c1e9dea9e00003c67273b203b8.png"}
+%link{:href => "//dozhvly6e8gax.cloudfront.net/assets/application-593fbcc7c0180b20c8615ac2c4700234.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+  .home-block-interface.home-block-ui.home-block-ui-duo.beige
+    .container.fluid
+      .block-illu.block-left
+        %img{:alt => "", :src => "//dozhvly6e8gax.cloudfront.net/assets/home/illustration-videoconf-b8b943ec991251cef546f55f842cd92e.png"}
+      .block-txt.block-right
+        %h4.home-block-main-subtitle
+          %font
+            %font A simple and effective interface
+        .home-block-main-txt
+          %p
+            %font
+              %font LiveMentor offers maximum interaction experience: our students constantly participate in the course and they love it.
+          %p
+            %font
+              %font The shared whiteboard allows you to draw mathematical equations or physical patterns.
+          %p
+            %font
+              %font The technology also works well on computer tablet on, even for low connections.
+        %a.mentor-btn{:onclick => "focusResearch()"}
+          %font
+            %font Find a mentor
+  / Docs block
+  .home-block-docs.home-block-ui.home-block-ui-duo
+    .container.fluid
+      .block-txt.block-left
+        %h4.home-block-main-subtitle
+          %font
+            %font Access to all documents exchanged
+        .home-block-main-txt
+          %p
+            %font
+              %font All documents exchanged between the mentor and the student during the course are archived and accessible at all times.
+          %p
+            %font
+              %font Track your progress by finding for each course, the chapters worked and performed exercises.
+        %a.mentor-btn{:onclick => "focusResearch()"}
+          %font
+            %font Find a mentor
+      .block-illu.block-right
+        %img{:alt => "", :src => "//dozhvly6e8gax.cloudfront.net/assets/home/illustration-docs-90a88ce3bebbcc8576c34a22bdbf0b3a.png"}
+  / Mentors block
+  .home-block-mentors.home-block-ui.beige
+    .container.fluid
+      .home-block-main-title-ctn
+        %h3.home-block-main-title
+          %font
+            %font The largest Internet network of mentors
+        .home-block-main-title--pattern
+          %span
+          %span
+          %span
+      .home-block-main-txt
+        %p
+          %font
+            %font Our mentors are much more than just individual teachers.
+            %font Grandes Ecoles students or certified teachers, they are fully aware of the problems of the students.
+      %h4.home-block-main-subtitle
+        %font
+          %font A few stars among our mentors 2047
+      %ul.row.fluid.home-block-mentors--list
+        %li.span4.item
+          %figure.item-pic{:alt => "Blandine French teacher", :style => "background-image:url(//dozhvly6e8gax.cloudfront.net/assets/home/blandine-a3b4279b5483a3e57b3e883c4b46787a.jpg)"}
+          %span.item-name
+            %font
+              %font Blandine
+          %span.item-status
+            %font
+              %font teacher certified
+          .item-txt
+            %p
+              %font
+                %font Gives French lessons of the Sixth to the Terminal.
+        %li.span4.item
+          %figure.item-pic{:alt => "Emmanuel student at HEC", :style => "background-image:url(//dozhvly6e8gax.cloudfront.net/assets/home/283-138ab5f9835c039c093c0937f0c46755.jpg)"}
+          %span.item-name
+            %font
+              %font Emmanuel
+          %span.item-status
+            %font
+              %font Student at HEC
+          .item-txt
+            %p
+              %font
+                %font Give economics courses in high school and prep school HEC.
+        %li.span4.item
+          %figure.item-pic{:alt => "Anahyse trainer English", :style => "background-image:url(//dozhvly6e8gax.cloudfront.net/assets/home/11915-e6beee6e71a008a6b6e4f858f4417b52.jpg)"}
+          %span.item-name
+            %font
+              %font Anahyse
+          %span.item-status
+            %font
+              %font professional trainer
+          .item-txt
+            %p
+              %font
+                %font Provides English classes for all levels.
+      %p.home-block-mentors--notetxt
+        %font
+          %font Our mentors are rated and evaluated by their students at the end of each course
+      %a.mentor-btn{:onclick => "focusResearch()"}
+        %font
+          %font Find a mentor
+  / Product block
+  .home-block-product.home-block-ui
+    .container.fluid
+      .home-block-main-title-ctn
+        %h3.home-block-main-title
+          %font
+            %font Our students progress
+        .home-block-main-title--pattern
+          %span
+          %span
+          %span
+      %h4.home-block-main-subtitle
+        %font
+          %font Every day, new students adopt LiveMentor
+      %ul.row.fluid.home-block-product--list
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font Simplicity
+          .item-txt
+            %p
+              %font
+                %font The simplest solution to take a particular course.
+                %font Choose your mentor, book a course and progress with him.
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font personalization
+          .item-txt
+            %p
+              %font
+                %font Mentors begin each new relationship through a free educational assessment designed to understand better the needs of the student.
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font Pedagogy
+          .item-txt
+            %p
+              %font
+                %font Our mentors all follow specialized training in online mentoring provided by a school counselor LiveMentor.
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font Trust
+          .item-txt
+            %p
+              %font
+                %font LiveMentor is a trusted site: reservations and payments are managed by Crédit Mutuel, users of the data is secure.
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font Freedom
+          .item-txt
+            %p
+              %font
+                %font No registration fees or mandatory commitment.
+                %font LiveMentor service is 100% customized.
+                %font Not worth breaking the bank for progress!
+        %li.span4.item
+          %h5.item-title
+            %font
+              %font Customer Support
+          .item-txt
+            %p
+              %font
+                %font Our customer service is available by phone or email to answer all your questions, Monday to Sunday, from 10am to 20pm.
+      %a.mentor-btn{:onclick => "focusResearch()"}
+        %font
+          %font Find a mentor
+  / Press block
+  .home-block-press.home-block-ui.beige
+    .container.fluid
+      .home-block-main-title-ctn
+        %h3.home-block-main-title
+          %font
+            %font We would not have said it better!
+        .home-block-main-title--pattern
+          %span
+          %span
+          %span
+      .home-block-press--logos
+        %a{:href => "#", :title => "Press about LiveMentor"}
+          %img{:alt => "Press", :src => "//dozhvly6e8gax.cloudfront.net/assets/presse-c24a5209750b94d1ab6328211721d627.png"}
+      %p.home-block-press--quote
+        %font
+          %font "A revolution for students, as students who give private lessons."
+      .trustpilot-widget{"data-businessunit-id" => "55ae7dc00000ff0005813ec5", "data-locale" => "fr-FR", "data-style-height" => "400px", "data-style-width" => "100%", "data-tags" => "SelectedReview", "data-template-id" => "539ad60defb9600b94d7df2c", :style => "position: relative;"}
+        %iframe{:frameborder => "0", :scrolling => "no", :src => "https://widget.trustpilot.com/trustboxes/539ad60defb9600b94d7df2c/index.html?locale=fr-FR&amp;templateId=539ad60defb9600b94d7df2c&amp;businessunitId=55ae7dc00000ff0005813ec5&amp;styleHeight=400px&amp;styleWidth=100%25&amp;tags=SelectedReview", :style => "position: relative; height: 400px; width: 100%; border-style: none; display: block; overflow: hidden;"}
+      %a.home-block-press--reviewslink{:href => "https://fr.trustpilot.com/review/livementor.com", :target => "_blank"}
+        %font
+          %font See other opinions on Trustpilot
+  .homethree.home-block-ui
+    .container.fluid
+      .home-block-main-title-ctn
+        %h3.home-block-main-title
+          %font
+            %font Levels and popular materials
+        .home-block-main-title--pattern
+          %span
+          %span
+          %span
+      .row.fluid
+        .span4
+          %a.homethree-subtitle{:href => "#", :title => "Discover all English levels"}
+            %font
+              %font
+                English
+          %ul.section-set
+            %li
+              %a{:href => "#", :title => "Find a mentor in English level Vocational Training"}
+                %font
+                  %font
+                    Professional training
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/anglais?category=90", :title => "Find a mentor in English High School level"}
+                %font
+                  %font
+                    High school
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/anglais?category=104", :title => "Find a mentor level English College"}
+                %font
+                  %font
+                    Middle School
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/anglais?category=16", :title => "Find a mentor in English level Prepa HEC"}
+                %font
+                  %font
+                    prepa HEC
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/anglais?category=188", :title => "Find a mentor TOEIC Preparation"}
+                %font
+                  %font
+                    TOEIC Preparation
+        .span4
+          %a.homethree-subtitle{:href => "/cours-particuliers/soutien-scolaire/maths", :title => "Discover all the levels in Maths"}
+            %font
+              %font
+                maths
+          %ul.section-set
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/maths?category=3", :title => "Find a mentor in Mathematics High School level"}
+                %font
+                  %font
+                    High school
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/maths?category=99", :title => "Find a mentor College level Mathematics"}
+                %font
+                  %font
+                    Middle School
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/maths?category=12", :title => "Find a mentor in ECS level Mathematics Prepa HEC"}
+                %font
+                  %font
+                    prep ECS
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/maths?category=11", :title => "Find a mentor in Mathematics ECE level Prepa HEC"}
+                %font
+                  %font
+                    prep ECE
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/maths?category=193", :title => "Find a mentor in Mathematics MPSI / MP level Prépas Scientific"}
+                %font
+                  %font
+                    Prépas MPSI / MP
+        .span4
+          %a.homethree-subtitle{:href => "/cours-particuliers/en-ligne/langue/espagnol", :title => "Discover all levels in Spanish"}
+            %font
+              %font
+                Spanish
+          %ul.section-set
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/espagnol?category=91", :title => "Find a mentor in Spanish Level High School"}
+                %font
+                  %font
+                    High school
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/espagnol?category=106", :title => "Find a mentor in Spanish college level"}
+                %font
+                  %font
+                    Middle School
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/espagnol?category=86", :title => "Find a mentor in Spanish level Prepa HEC"}
+                %font
+                  %font
+                    prepa HEC
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/espagnol?category=23", :title => "Find a mentor in Spanish Level Vocational Training"}
+                %font
+                  %font
+                    Professional training
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/espagnol?category=248", :title => "Find a mentor DELE - Diploma of Spanish as a foreign language"}
+                %font
+                  %font
+                    DELE
+        .span4
+          %a.homethree-subtitle{:href => "/cours-particuliers/soutien-scolaire/francais", :title => "Discover all levels in French"}
+            %font
+              %font
+                French
+          %ul.section-set
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/francais?category=4", :title => "Find a mentor in French Lycée level"}
+                %font
+                  %font
+                    High school
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/francais?category=100", :title => "Find a mentor in French college level"}
+                %font
+                  %font
+                    Middle School
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/francais?category=138", :title => "Find a mentor-French Scientific Philosophy level Prépas"}
+                %font
+                  %font
+                    Scientific prépas
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/langue/francais-fle?category=184", :title => "Find a mentor in FLE (French as a Foreign Language)"}
+                %font
+                  %font
+                    Professional training
+            %li
+              %a{:href => "/cours-particuliers/soutien-scolaire/francais?category=357", :title => "Find a mentor in French - License"}
+                %font
+                  %font
+                    Licence
+        .span4
+          %a.homethree-subtitle{:href => "/cours-particuliers/en-ligne/droit", :title => "Discover all subjects in Law"}
+            %font
+              %font
+                Law
+          %ul.section-set
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/droit?category=155", :title => "Find a mentor in Constitutional Law"}
+                %font
+                  %font
+                    Constitutional right
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/droit?category=157", :title => "Find a mentor in Administrative Law"}
+                %font
+                  %font
+                    Administrative law
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/droit?category=163", :title => "Find a mentor in business tax law"}
+                %font
+                  %font
+                    Business Tax Law
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/droit?category=148", :title => "Find a mentor in Labour Law"}
+                %font
+                  %font
+                    Labor law
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/droit?category=150", :title => "Find a mentor in Company law"}
+                %font
+                  %font
+                    Corporate law
+        .span4
+          %a.homethree-subtitle{:href => "/cours-particuliers/en-ligne/code", :title => "Discover all the programming languages"}
+            %font
+              %font
+                Code
+          %ul.section-set
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/code/php?category=82", :title => "Find a mentor in PHP"}
+                %font
+                  %font
+                    PHP
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/code/swift?category=312", :title => "Find a mentor in Swift"}
+                %font
+                  %font
+                    Swift
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/code/js?category=38", :title => "Find a mentor in Javascript / JQuery"}
+                %font
+                  %font
+                    Javascript / JQuery
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/code/php?category=321", :title => "Find a mentor in Symfony"}
+                %font
+                  %font
+                    symfony
+            %li
+              %a{:href => "/cours-particuliers/en-ligne/code/java?category=97", :title => "Find a mentor in Java"}
+                %font
+                  %font
+                    Java
+      .row-fluid
+        %a.home-block-press--reviewslink{:href => "/niveaux-matieres"}
+          %font
+            %font View all levels and all subjects
+  / Modal
+  #modalIfEmptySearch.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+    .modal-header
+      %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+        %font
+          %font ×
+      %p#myModalLabel.lead
+        %font
+          %font We do not recognize your search ...
+    .modal-body
+      %p
+        %font
+          %font When you enter your topic in the search box, you should see a menu with several options brochure, simply choose one
+      %strong
+        %font
+          %font For example, you can try:
+      %p
+      %table
+        %tbody
+          %tr
+            %td
+              %font
+                %font Mathematics&nbsp;&nbsp;&nbsp;
+            %td
+              %font
+                %font Japanese
+          %tr
+            %td
+              %font
+                %font French
+            %td
+              %font
+                %font Tage Mage
+          %tr
+            %td
+              %font
+                %font History
+            %td
+              %font
+                %font Maintenance of personality
+      %p
+    .modal-footer
+      %button.btn.btn-info{"aria-hidden" => "true", "data-dismiss" => "modal"}
+        %strong
+          %font
+            %font Retry
+  #written_disclaimer.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+    .modal-dialog{:role => "do§ument"}
+      .modal-header
+        %font
+          %font
+            Written aids arrive on
+        %b
+          %font
+            %font LiveMentor
+      .modal-body
+        .written-disclaimer-mentor-line
+          .written-disclaimer-left-corner
+          .written-disclaimer-mentor
+            %img{:alt => "Glassed-mentor", :src => "//dozhvly6e8gax.cloudfront.net/assets/written_help/glassed-mentor-00ee8885a1a83bb372da5c3aad0e77ba.png"}
+              %br
+                %font
+                  %font
+                    A mentor makes a written aid
+          .written-disclaimer-right-corner
+        .written-disclaimer-docs-line
+          .written-disclaimer-doc
+            %img{:alt => "Up-orange triangle", :src => "//dozhvly6e8gax.cloudfront.net/assets/written_help/up-orange-triangle-dac1b63a192338f56ba148193c44e3a1.png"}
+              %br
+                %img.written-disclaimer-doc-img{:alt => "Doc", :src => "//dozhvly6e8gax.cloudfront.net/assets/written_help/doc-bc78862f6ff2fd1ff6a5e4707febb626.png"}
+                  %br
+                    %font
+                      %font
+                        Describe your problem accompanied by a document
+          .written-disclaimer-doc
+            %img{:alt => "Bot-orange triangle", :src => "//dozhvly6e8gax.cloudfront.net/assets/written_help/bot-orange-triangle-0930ef0416e8bbc22edbc07b5fdd4c47.png"}
+              %br
+                %img.written-disclaimer-doc-img.checked-doc{:alt => "Checked_doc", :src => "//dozhvly6e8gax.cloudfront.net/assets/written_help/checked_doc-e778e75ef931f82138795d45480346ea.png"}
+                  %br
+                    %font
+                      %font
+                        You find your document with the written support of mentor
+      .modal-footer
+        %a.basic-pink-btn{:href => "/aide-ecrite"}
+          %font
+            %font I understand, I want to request a written help!
+  .footer
+    .container.fluid
+      .dynamic-row.clearfix
+        .column-3
+          .copyright
+            %a.logo
+            %div
+              %ul.social-media.unstyled
+                %li
+                  %a{:href => "https://www.facebook.com/LiveMentorFans", :target => "_blank"}
+                    %span.ss-icon.ss-social
+                      %font
+                        %font Facebook
+                %li
+                  %a{:href => "https://plus.google.com/103229112298042002770", :target => "_blank"}
+                    %span.ss-icon.ss-social
+                      %font
+                        %font googleplus
+                %li
+                  %a{:href => "https://twitter.com/_LiveMentor", :target => "_blank"}
+                    %span.ss-icon.ss-social
+                      %font
+                        %font twitter
+                %li
+                  %a{:href => "http://blog.livementor.com/", :target => "_blank"}
+                    %span.ss-icon.ss-social
+                      %font
+                        %font tumblr
+            %a.footer-mixpanel-badge{:href => "https://mixpanel.com/f/partner"}
+              %img{:alt => "mobile Analytics", :src => "//cdn.mxpnl.com/site_media/images/partner/badge_light.png"}/
+        .column-2
+          %h4
+            %font
+              %font LiveMentor
+          %ul.unstyled
+            %li
+              %a{:href => "/a-propos-de-LiveMentor"}
+                %font
+                  %font About
+            %li
+              %a{:href => "/comment-ca-marche"}
+                %font
+                  %font How it works ?
+            %li
+              %a{:href => "/faq"}
+                %font
+                  %font FAQ
+            %li
+              %a{:href => "/cours-particuliers"}
+                %font
+                  %font The Tutorial
+        .column-2
+          %h4
+            %font
+              %font Students and Parents
+          %ul.unstyled
+            %li
+              %a{:href => "/niveaux-matieres"}
+                %font
+                  %font Levels and materials
+            %li
+              %a{:href => "/cours-particuliers/a-domicile"}
+                %font
+                  %font Everywhere in France
+            %li
+              %a{:href => "/ressources"}
+                %font
+                  %font Resources
+            %li
+              %a{:href => "/temoignages", :rel => "nofollow"}
+                %font
+                  %font notice
+        .column-2
+          %h4
+            %font
+              %font For mentors
+          %ul.unstyled
+            %li
+              %a{:href => "/cours-particuliers/enseigner"}
+                %font
+                  %font become a Mentor
+            %li
+              %a{:href => "/tableau-honneur"}
+                %font
+                  %font Testimonials
+        .column-3
+          %h4
+            %font
+              %font Questions?
+              %font Need help ?
+          %ul.unstyled
+            %li
+              %a{:href => "/contact"}
+                %font
+                  %font Contact
+          %span.number
+            %font
+              %font 01 84 17 03 57
+    .container.unstyled.fluid.all-rights-reserved
+      %font
+        %font
+          LiveMentor © 2016 - All Rights Reserved •
+      %a{:href => "/cgu"}
+        %font
+          %font Terms
+      %font
+        %font •
+      %a{:href => "/press"}
+        %font
+          %font Press
+  .mobile-menu
+    %span.mobile-menu-close.needclick{"data-toggle" => "mobile-menu"}
+    .mobile-menu-inner
+      %ul.mobile-menu-list
+        %li
+          %a{:href => "/"}
+            %font
+              %font Private tuition
+        %li
+          %a{"data-target" => "#written_disclaimer", "data-toggle" => "modal"}
+            %font
+              %font written aids
+        %li.mobile-menu-list-separator
+          %a{:href => "/masterclass"}
+            %font
+              %font MasterClass
+        %li
+          %a{:href => "/comment-ca-marche"}
+            %font
+              %font How it works
+        %li
+          %a{"data-toggle" => "modal", :href => "#login-box-modal"}
+            %font
+              %font Log in
+        %li
+          %a.mobile-menu-button.mobile-menu-button-with-subtitle{"data-toggle" => "modal", :href => "#sign_up_modal"}
+            %font
+              %font
+                Registration
+              %span.mobile-menu-button-subtitle
+                %font (free trial!)
+            %br
+              %span.mobile-menu-button-subtitle
+                %font
+        %li
+          %a{:href => "/enseigner"}
+            %font
+              %font become a mentor
+        %li
+          %a{:href => "/contact"}
+            %font
+              %font Contact
+      .mobile-menu-footer
+        %ul.mobile-menu-social-media
+          %li
+            %a.ss-social.ss-facebook{:href => "https://www.facebook.com/LiveMentorFans", :target => "_blank"}
+          %li
+            %a.ss-social.ss-twitter{:href => "https://twitter.com/_LiveMentor", :target => "_blank"}
+          %li
+            %a.ss-social.ss-linkedin{:href => "https://www.linkedin.com/company/hellomentor", :target => "_blank"}
+        .mobile-menu-brand
+          %font
+            %font
+              © 2015 LiveMentor
